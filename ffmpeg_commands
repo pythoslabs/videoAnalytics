@@ -1,0 +1,10 @@
+1. To merge the pics in a sequence into a video file
+
+>> ffmpeg  -i frame_%d.jpg video_3.webm
+
+Note : The images are named frame_1.jpg , frame_2.jpg , frame_3.jpg etc 
+----------------------------------------------------------
+
+2. More options - to use the library
+>> ffmpeg -r 1/5 -i frame_%d.jpg -c:v libx264 -vf fps=25 -pix_fmt yuv420p out.mp4
+
