@@ -26,3 +26,9 @@ frame-001.png
 frame-002.png
 
 
+eg 3 : If images are named ( in the directory called IMG ) 
+0001.jpg
+0002.jpg etc ..
+Directory IMG relative to the location of ffmpeg.exe 
+
+>> ffmpeg IMG/%04d.png video.webm
