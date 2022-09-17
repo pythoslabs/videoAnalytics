@@ -32,3 +32,5 @@ eg 3 : If images are named ( in the directory called IMG )
 Directory IMG relative to the location of ffmpeg.exe 
 
 >> ffmpeg IMG/%04d.png video.webm
+or sometimes ( try this if the above gives an error) 
+>> ffmpeg -i IMG/%04d.png video.webm
