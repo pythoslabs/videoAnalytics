@@ -8,10 +8,11 @@ Note : The images are named frame_1.jpg , frame_2.jpg , frame_3.jpg etc
 2. More options - to use the library
 >> ffmpeg -r 1/5 -i frame_%d.jpg -c:v libx264 -vf fps=25 -pix_fmt yuv420p out.mp4
 
+----------------------------------------------------------
+----------------------------------------------------------
 
-
-### Defining Image sequences 
-1. 
+3. Defining Image sequences for argument inputs
+eg 1. 
 >> ffmpeg frame-%d.png video.webm
 If file sequence is like 
 frame-1.png
@@ -19,7 +20,7 @@ frame-2.png
 ...
 ....
 
-2. 
+eg 2. 
 >> ffmpeg frame-%03d.png video.webm
 
 frame-001.png
@@ -34,3 +35,5 @@ Directory IMG relative to the location of ffmpeg.exe
 >> ffmpeg IMG/%04d.png video.webm
 or sometimes ( try this if the above gives an error) 
 >> ffmpeg -i IMG/%04d.png video.webm
+
+
